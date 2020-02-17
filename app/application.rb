@@ -2,10 +2,10 @@ require 'pry'
 
 class Application
 
-def call(time)
+def call(env)
   resp = Rack::Response.new 
   binding.pry
-  if time  < Time.new(2015, 11, 27, 12, 00)
+  if Time.now  < Time.new(2015, 11, 27, 12, 00)
     resp.write "Good Morning!"
   else 
     resp.write "Good Afternoon!"
