@@ -7,6 +7,7 @@ def call
   else 
     resp.write "Good Afternoon!"
   end 
+  resp.finish
 end 
 
 
