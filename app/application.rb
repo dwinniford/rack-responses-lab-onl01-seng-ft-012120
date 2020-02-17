@@ -4,7 +4,6 @@ class Application
 
 def call(env)
   resp = Rack::Response.new 
-  binding.pry
   if Time.now  < Time.new(2015, 11, 27, 12, 00)
     resp.write "Good Morning!"
   else 
