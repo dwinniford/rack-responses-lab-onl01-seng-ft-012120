@@ -9,7 +9,5 @@ def call
   end 
 end 
 
-def greeting 
-end 
-  
+
 end 
